@@ -1,0 +1,6 @@
+smolagents
+sqlalchemy
+streamlit
+python-dotenv
+requests
+faker
