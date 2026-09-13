@@ -5,9 +5,10 @@ import subprocess
 from dotenv import load_dotenv
 from smolagents import CodeAgent, InferenceClientModel
 
-if not os.path.exists('company.db') :
-    subprocess.run(["python3", "setup_db.py"], check = True)
+from setup_db import createDb
 
+if not os.path.exists('company.db') :
+    createDb()
 # load_dotenv()
 
 HF_API_KEY = st.secrets.get("HF_API_KEY") or os.getenv("HF_API_KEY")
