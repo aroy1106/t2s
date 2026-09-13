@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from smolagents import CodeAgent, InferenceClientModel
 
 if not os.path.exists('company.db') :
-    subprocess.run(["python", "setup_db.py"], check = True)
+    subprocess.run(["python3", "setup_db.py"], check = True)
 
 # load_dotenv()
 
