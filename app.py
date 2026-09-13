@@ -17,7 +17,7 @@ if not HF_API_KEY :
     st.error("Hugging Face API Key not found. Please configure it in your secrets.")
 
 st.set_page_config(page_title = "Text2SQL AI Assistant", page_icon = "📊")
-st.title("Talk to you SQL Database")
+st.title("Talk to your SQL Database")
 
 @st.cache_resource
 def getAgent () :
